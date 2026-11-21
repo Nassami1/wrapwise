@@ -1,0 +1,7 @@
+[
+  { "symbol": "NVDA", "name": "Nvidia", "rwa_id": 2, "aliases": ["NVDA"] },
+  { "symbol": "GOLD", "name": "Gold", "rwa_id": 1, "aliases": ["GOLD", "XAU", "XAUUSD"] },
+  { "symbol": "SPY", "name": "SPDR S&P 500", "rwa_id": 86, "aliases": ["SPY"] },
+  { "symbol": "AAPL", "name": "Apple", "rwa_id": 3, "aliases": ["AAPL"] },
+  { "symbol": "TSLA", "name": "Tesla", "rwa_id": 14, "aliases": ["TSLA"] }
+]

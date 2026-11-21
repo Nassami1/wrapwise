@@ -1,0 +1,36 @@
+{
+  "data": {
+    "rwa_assets": [
+      {
+        "name": "Gold",
+        "symbol": "GOLD",
+        "slug": "gold",
+        "website": null,
+        "about": {
+          "description": "Gold is a physical commodity and monetary metal that has served as a store of value for thousands of years, widely regarded as a safe-haven asset that retains purchasing power during inflation and financial instability."
+        },
+        "rwa_id": 1,
+        "asset_type": "commodity",
+        "has_tokens": true
+      },
+      {
+        "name": "Nvidia Corp",
+        "symbol": "NVDA",
+        "slug": "nvidia",
+        "website": "https://www.nvidia.com",
+        "about": {
+          "description": "NVIDIA is a U.S.-based semiconductor and computing company specializing in GPUs, AI hardware, and high-performance computing."
+        },
+        "rwa_id": 2,
+        "asset_type": "stock",
+        "has_tokens": true,
+        "primary_exchange": "Nasdaq"
+      }
+    ]
+  },
+  "status": {
+    "error_code": 0,
+    "credit_count": 1,
+    "notice": "Recorded from CMC info documentation example."
+  }
+}
