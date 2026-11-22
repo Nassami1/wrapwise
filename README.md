@@ -4,7 +4,7 @@ WrapWise compares tokenized wrappers of the same real-world asset and shows whic
 
 Built for the Build with CMC: API Hackathon Round 2, Real World Assets track.
 
-site : wrapwise.samimi.xyz/
+site : https://wrapwise.samimi.xyz/
 
 demo : https://youtu.be/wYuodjSTg-k
 
