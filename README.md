@@ -4,11 +4,14 @@ WrapWise compares tokenized wrappers of the same real-world asset and shows whic
 
 Built for the Build with CMC: API Hackathon Round 2, Real World Assets track.
 
-[TODO: add live demo URL]
+site : wrapwise.samimi.xyz/
 
-[TODO: add dashboard screenshot. public/dashboard-preview.png is not in this checkout.]
+demo : https://youtu.be/wYuodjSTg-k
 
-[TODO: add demo video URL before submissions close]
+
+<img width="2110" height="748" alt="Collage w" src="https://github.com/user-attachments/assets/b5747907-993c-4f45-9b4e-0f3c046a9641" />
+
+
 
 The problem: the same stock or metal can trade through several tokenized wrappers at different prices, with different liquidity and different issuers. Checking each wrapper by hand is slow and error-prone. The solution: WrapWise pulls wrapper prices from the CoinMarketCap API, builds one aggregate anchor price, scores every wrapper on fairness, liquidity, and issuer strength, and translates the result into a dollar answer for the amount you enter. It is a comparison tool, not financial advice.
 
