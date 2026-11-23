@@ -114,26 +114,8 @@ Open `http://localhost:3000/dashboard?asset=NVDA&amount=1000`.
 
 `.env.example` contains only `CMC_API_KEY=` and no key. The key is read only by server routes. It is never sent to the browser.
 
-## Deploy on Vercel
 
-The app is a standard Next.js project and deploys from this repo without extra build steps.
 
-1. Import the repository in Vercel.
-2. Keep the defaults: Framework Preset `Next.js`, Build Command `npm run build`, Output Directory empty.
-3. Add the environment variable `CMC_API_KEY` with your CoinMarketCap key. Redeploy after changing it.
-4. Without `CMC_API_KEY`, Vercel has no disk cache and this repo has no quotes fixture, so the comparison does not load live or recorded wrapper prices. Set the key before a demo.
-
-Vercel's filesystem is read-only at runtime. In-memory caching still works. Disk caching is best-effort. Premium history falls back to the temporary directory when `data/snapshots/` is not writable. `data/cache` and `data/snapshots/*.json` are gitignored.
-
-## Project structure
-
-- `app/page.tsx`: landing page. `app/dashboard/page.tsx`: the comparison tool. `app/asset/[rwaId]/page.tsx`: redirects to the dashboard.
-- `app/api/`: server routes for RWA quotes, map, issuers, info, the linked crypto quote, and local snapshots.
-- `components/`: comparison UI, including the calculator, table, drawer, and score display.
-- `lib/`: CoinMarketCap client, comparison, scoring, formatting, and snapshots.
-- `data/curated-assets.json`: NVDA, GOLD, SPY, AAPL, and TSLA, with aliases.
-- `data/fixtures/`: `map.json` and `info.json` only.
-- `scripts/probe-cmc.mjs`: local probe that reads `.env.local` and can refresh fixtures. It is not part of the app.
 
 ## Scripts
 
